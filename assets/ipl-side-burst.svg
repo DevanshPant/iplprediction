@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="760" viewBox="0 0 480 760" fill="none">
+  <defs>
+    <linearGradient id="ribbon" x1="56" y1="472" x2="368" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#33C5A6"/>
+      <stop offset=".28" stop-color="#B8DE62"/>
+      <stop offset=".48" stop-color="#FFD91A"/>
+      <stop offset=".66" stop-color="#FF985F"/>
+      <stop offset="1" stop-color="#B623A3"/>
+    </linearGradient>
+    <linearGradient id="dot" x1="92" y1="640" x2="326" y2="68" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#31C5A9"/>
+      <stop offset=".45" stop-color="#FFD719"/>
+      <stop offset=".72" stop-color="#FF8F62"/>
+      <stop offset="1" stop-color="#AF25A3"/>
+    </linearGradient>
+  </defs>
+  <g opacity=".95">
+    <path d="M82 616C187 445 267 300 410 34" stroke="url(#ribbon)" stroke-width="19" stroke-linecap="round"/>
+    <path d="M42 552C171 423 269 270 392 17" stroke="url(#ribbon)" stroke-width="13" stroke-linecap="round"/>
+    <path d="M32 484C154 397 278 231 354 5" stroke="url(#ribbon)" stroke-width="11" stroke-linecap="round"/>
+    <path d="M31 416C158 362 270 213 308 13" stroke="url(#ribbon)" stroke-width="9" stroke-linecap="round"/>
+    <path d="M45 350C177 322 257 184 262 34" stroke="url(#ribbon)" stroke-width="8" stroke-linecap="round"/>
+    <path d="M73 290C194 282 237 171 223 61" stroke="url(#ribbon)" stroke-width="7" stroke-linecap="round"/>
+    <path d="M113 236C214 238 219 156 190 92" stroke="url(#ribbon)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M165 190C232 205 213 149 174 118" stroke="url(#ribbon)" stroke-width="5" stroke-linecap="round"/>
+    <path d="M122 680C202 478 299 314 454 80" stroke="url(#ribbon)" stroke-width="15" stroke-linecap="round"/>
+    <path d="M172 711C220 503 325 344 475 140" stroke="url(#ribbon)" stroke-width="12" stroke-linecap="round"/>
+    <path d="M222 726C239 524 349 363 492 206" stroke="url(#ribbon)" stroke-width="10" stroke-linecap="round"/>
+    <path d="M274 721C258 538 372 388 492 276" stroke="url(#ribbon)" stroke-width="9" stroke-linecap="round"/>
+    <path d="M326 698C281 545 395 414 482 352" stroke="url(#ribbon)" stroke-width="8" stroke-linecap="round"/>
+    <path d="M374 661C311 544 416 438 461 426" stroke="url(#ribbon)" stroke-width="7" stroke-linecap="round"/>
+    <path d="M20 320C30 312 37 303 43 292" stroke="#FFD719" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="82" cy="616" r="23" fill="url(#dot)"/>
+    <circle cx="42" cy="552" r="18" fill="url(#dot)"/>
+    <circle cx="32" cy="484" r="17" fill="url(#dot)"/>
+    <circle cx="31" cy="416" r="16" fill="url(#dot)"/>
+    <circle cx="45" cy="350" r="17" fill="url(#dot)"/>
+    <circle cx="73" cy="290" r="15" fill="url(#dot)"/>
+    <circle cx="113" cy="236" r="15" fill="url(#dot)"/>
+    <circle cx="165" cy="190" r="17" fill="url(#dot)"/>
+    <circle cx="410" cy="34" r="20" fill="url(#dot)"/>
+    <circle cx="392" cy="17" r="14" fill="url(#dot)"/>
+    <circle cx="354" cy="5" r="18" fill="url(#dot)"/>
+    <circle cx="308" cy="13" r="20" fill="url(#dot)"/>
+    <circle cx="262" cy="34" r="19" fill="url(#dot)"/>
+    <circle cx="223" cy="61" r="16" fill="url(#dot)"/>
+    <circle cx="190" cy="92" r="14" fill="url(#dot)"/>
+    <circle cx="174" cy="118" r="12" fill="url(#dot)"/>
+    <circle cx="122" cy="680" r="18" fill="url(#dot)"/>
+    <circle cx="172" cy="711" r="18" fill="url(#dot)"/>
+    <circle cx="222" cy="726" r="17" fill="url(#dot)"/>
+    <circle cx="274" cy="721" r="16" fill="url(#dot)"/>
+    <circle cx="326" cy="698" r="15" fill="url(#dot)"/>
+    <circle cx="374" cy="661" r="14" fill="url(#dot)"/>
+  </g>
+</svg>

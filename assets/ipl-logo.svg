@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="222" height="73" viewBox="0 0 222 73" fill="none">
+  <defs>
+    <linearGradient id="player" x1="26" y1="5" x2="67" y2="69" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#24C56B"/>
+      <stop offset=".22" stop-color="#F7D01E"/>
+      <stop offset=".43" stop-color="#F26A2E"/>
+      <stop offset=".68" stop-color="#D625A4"/>
+      <stop offset="1" stop-color="#6146E8"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <path d="M30 63C42 50 47 36 45 22" stroke="white" stroke-width="5" stroke-linecap="round"/>
+    <path d="M21 68C36 48 40 32 36 12" stroke="url(#player)" stroke-width="5" stroke-linecap="round"/>
+    <path d="M41 20L58 6" stroke="white" stroke-width="4" stroke-linecap="round"/>
+    <path d="M51 12L73 4" stroke="url(#player)" stroke-width="4" stroke-linecap="round"/>
+    <path d="M34 31C24 28 18 20 17 10" stroke="white" stroke-width="5" stroke-linecap="round"/>
+    <path d="M18 14L6 10" stroke="url(#player)" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="75" cy="3.8" r="3.8" fill="#8BE357"/>
+    <path d="M31 64L53 64L42 70H24L31 64Z" fill="white"/>
+  </g>
+  <g fill="white" font-family="Arial, Helvetica, sans-serif" font-weight="800">
+    <text x="66" y="24" font-size="20">INDIAN</text>
+    <text x="66" y="46" font-size="22">PREMIER</text>
+    <text x="66" y="68" font-size="22">LEAGUE</text>
+  </g>
+</svg>

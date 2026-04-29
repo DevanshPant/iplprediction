@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IPL Pulse Predictions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <aside class="side-art side-art-left" aria-hidden="true"></aside>
+      <aside class="side-art side-art-right" aria-hidden="true"></aside>
+
+      <header class="topbar">
+        <a class="brand" href="#home" aria-label="IPL Pulse Home">
+          <img
+            class="brand-logo"
+            src="https://documents.iplt20.com//ipl/assets/images/ipl-logo-new-old.png"
+            alt="Indian Premier League"
+          />
+          <span>
+            <strong>IPL Pulse</strong>
+            <small>AI-Powered Predictions</small>
+          </span>
+        </a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#matches">Matches</a>
+          <a href="#points">Points Table</a>
+          <a href="#comparison">Comparison</a>
+          <a href="#teams">Teams</a>
+        </nav>
+        <div class="top-actions">
+          <a class="watch-pill watch-link" href="https://www.hotstar.com/in/sports/cricket" target="_blank" rel="noreferrer">Watch Now</a>
+        </div>
+      </header>
+
+      <main id="home" class="content">
+        <section class="hero-panel">
+          <div class="hero-copy">
+            <p class="eyebrow">IPL 2026 • AI Prediction Centre</p>
+            <h1 id="match-title">Loading AI predictions...</h1>
+            <p id="match-subtitle">Powered by Gemini AI - generating predictions based on team form, venue, and historical data.</p>
+          </div>
+          <div class="live-status">
+            <span class="pulse-dot"></span>
+            <span id="refresh-status">Connecting</span>
+          </div>
+        </section>
+
+        <section id="matches" class="score-card">
+          <div class="match-meta">
+            <span id="match-status">Live data pending</span>
+            <span id="match-date">Updating now</span>
+            <span id="match-venue">Venue: TBC</span>
+          </div>
+
+          <div class="teams-row">
+            <article class="team-block">
+              <img id="team-a-logo" alt="" />
+              <strong id="team-a-code">TBA</strong>
+              <span id="team-a-name">Team A</span>
+              <p id="team-a-score">--</p>
+            </article>
+            <div class="versus">VS</div>
+            <article class="team-block">
+              <img id="team-b-logo" alt="" />
+              <strong id="team-b-code">TBA</strong>
+              <span id="team-b-name">Team B</span>
+              <p id="team-b-score">--</p>
+            </article>
+          </div>
+
+          <div class="probability">
+            <div class="probability-label">
+              <strong id="team-a-prob">Team A 50%</strong>
+              <span>Win Probability</span>
+              <strong id="team-b-prob">Team B 50%</strong>
+            </div>
+            <div class="probability-track">
+              <span id="prob-a-bar"></span>
+              <span id="prob-b-bar"></span>
+            </div>
+          </div>
+
+          <div class="watch-panel">
+            <div>
+              <strong>Watch the match screening</strong>
+              <span>Opens the official JioHotstar cricket section in a new tab.</span>
+            </div>
+            <a class="watch-pill watch-link" href="https://www.hotstar.com/in/sports/cricket" target="_blank" rel="noreferrer">Watch on JioHotstar</a>
+          </div>
+        </section>
+
+        <section id="fixtures" class="table-card fixtures-card">
+          <span id="results" class="anchor-offset" aria-hidden="true"></span>
+          <div class="section-title">
+            <h2>Fixtures</h2>
+            <span>Upcoming IPL schedule</span>
+          </div>
+          <div class="match-tabs" role="tablist" aria-label="Fixtures and results">
+            <button class="match-tab is-active" type="button" data-match-view="fixtures">Fixtures</button>
+            <button class="match-tab" type="button" data-match-view="results">Results</button>
+          </div>
+          <div id="fixture-list" class="fixture-list"></div>
+        </section>
+
+        <section class="insight-grid">
+          <article class="metric-card">
+            <div class="card-heading">
+              <span class="icon-disc">🪙</span>
+              <h2>Toss Prediction</h2>
+            </div>
+            <div class="prediction-team">
+              <img id="toss-logo" alt="" />
+              <div>
+                <strong id="toss-team">Calculating...</strong>
+                <p id="toss-detail">Based on venue, recent tosses and chasing trend.</p>
+              </div>
+            </div>
+            <div class="choice-strip">
+              <span>Predicted Choice</span>
+              <strong id="toss-choice">Bat First</strong>
+            </div>
+          </article>
+
+          <article class="metric-card">
+            <div class="card-heading">
+              <span class="icon-disc">🏟</span>
+              <h2>Pitch Report</h2>
+            </div>
+            <span class="tag-good" id="pitch-type">Balanced surface</span>
+            <h3 id="pitch-venue">Venue insights</h3>
+            <p id="pitch-text">Average first innings, chasing record and boundary dimensions will update here.</p>
+            <div class="mini-bars">
+              <label><span>Batting</span><meter id="batting-meter" min="0" max="100" value="64"></meter></label>
+              <label><span>Bowling</span><meter id="bowling-meter" min="0" max="100" value="36"></meter></label>
+              <label><span>Pace</span><meter id="pace-meter" min="0" max="100" value="54"></meter></label>
+            </div>
+          </article>
+
+          <article class="metric-card">
+            <div class="card-heading">
+              <span class="icon-disc">☁</span>
+              <h2>Weather Report</h2>
+            </div>
+            <div class="weather-main">
+              <strong id="weather-temp">28°C</strong>
+              <span id="weather-desc">Partly cloudy</span>
+            </div>
+            <div class="weather-grid">
+              <span><b id="humidity">62%</b>Humidity</span>
+              <span><b id="rain">8%</b>Rain</span>
+              <span><b id="wind">14 km/h</b>Wind</span>
+            </div>
+          </article>
+        </section>
+
+        <section id="comparison" class="table-card comparison-card">
+          <div class="section-title">
+            <h2>Team Comparison</h2>
+            <span>Head-to-head style selector</span>
+          </div>
+          <div class="comparison-controls">
+            <label>
+              <span>Team 1</span>
+              <select id="compare-team-a"></select>
+            </label>
+            <strong>VS</strong>
+            <label>
+              <span>Team 2</span>
+              <select id="compare-team-b"></select>
+            </label>
+          </div>
+          <div class="comparison-stage">
+            <article class="compare-team-card" id="compare-card-a"></article>
+            <div id="comparison-bars" class="comparison-bars"></div>
+            <article class="compare-team-card" id="compare-card-b"></article>
+          </div>
+        </section>
+
+        <section id="prediction-audit" class="table-card audit-card">
+          <div class="section-title">
+            <h2>Prediction Audit & Old Scores</h2>
+            <span id="prediction-score">Loading recent IPL matches</span>
+          </div>
+          <div id="match-history-list" class="match-history-list"></div>
+        </section>
+
+        <section id="points" class="table-card standings-card">
+          <div class="section-title">
+            <h2>Points Table</h2>
+            <span>Official-style standings</span>
+          </div>
+          <div class="standings-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>POS</th>
+                  <th>TEAM</th>
+                  <th>P</th>
+                  <th>W</th>
+                  <th>L</th>
+                  <th>NR</th>
+                  <th>NRR</th>
+                  <th>PTS</th>
+                  <th>RECENT FORM</th>
+                </tr>
+              </thead>
+              <tbody id="points-table"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="teams" class="table-card teams-panel">
+          <div class="section-title">
+            <h2>Teams</h2>
+            <span>Official IPL franchise cards</span>
+          </div>
+          <div id="team-grid" class="team-grid"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
