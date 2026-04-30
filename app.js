@@ -58,15 +58,17 @@ const teamMeta = {
 };
 
 const fallbackMatch = {
-  name: "Mumbai Indians vs Sunrisers Hyderabad",
+  name: "Chennai Super Kings vs Royal Challengers Bengaluru",
   status: "Preview • match prediction mode",
   date: "Today • 7:30 PM IST",
-  venue: "Wankhede Stadium, Mumbai",
-  teamA: "MI",
-  teamB: "SRH",
+  venue: "M. A. Chidambaram Stadium, Chennai",
+  teamA: "CSK",
+  teamB: "RCB",
   scoreA: "",
   scoreB: "",
-  result: "Match Prediction",
+  tossWinner: "CSK",
+  matchWinner: "RCB",
+  result: "RCB to win • CSK wins toss",
 };
 
 const standings = [
