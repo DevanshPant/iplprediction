@@ -232,8 +232,8 @@ function renderMatch(match, liveMode = false) {
 
   // Specific overrides for fallbackMatch as per user request
   if (match === fallbackMatch) {
-    tossTeam = "MI"; // MI wins the toss
-    tossChoiceText = "Opt to Bowl"; // MI chooses to bowl
+    tossTeam = "CSK"; // CSK wins the toss
+    tossChoiceText = "Opt to Bat"; // CSK chooses to bat
   } else {
     const isChasingGround = match.venue?.toLowerCase().match(/wankhede|chinnaswamy|eden gardens|narendra modi/);
     tossChoiceText = isChasingGround ? "Opt to Bowl" : "Opt to Bat";
@@ -412,9 +412,9 @@ function renderFixtures(view = "fixtures") {
     let matchWinnerCode = predictedWinnerCode(todayMatch);
     
     if (todayMatch === fallbackMatch) {
-      tossWinnerCode = "MI";
-      tossChoice = "Bowl";
-      matchWinnerCode = "SRH";
+      tossWinnerCode = "CSK";
+      tossChoice = "Bat";
+      matchWinnerCode = "RCB";
     }
 
     summaryHtml = `
